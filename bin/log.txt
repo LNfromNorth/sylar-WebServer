@@ -1,0 +1,4 @@
+2023-01-25 12:25:52	INFO	test macro info
+2023-01-25 12:25:52	DEBUG	test macro debug
+2023-01-25 12:25:52	WARN	test macro warn
+2023-01-25 12:25:52	DEBUG	test macro fmt debug hello

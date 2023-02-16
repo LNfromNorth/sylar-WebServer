@@ -1,0 +1,46 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../sylar/address.h
+memory
+-
+string
+-
+sys/socket.h
+-
+sys/types.h
+-
+arpa/inet.h
+-
+unistd.h
+-
+iostream
+-
+sys/un.h
+-
+vector
+-
+map
+-
+
+../sylar/uri.h
+memory
+-
+string
+-
+stdint.h
+-
+sylar/address.h
+../sylar/sylar/address.h
+
+/home/lnfromnorth/CProject/sylar-WebServer/tests/test_uri.cc
+sylar/uri.h
+/home/lnfromnorth/CProject/sylar-WebServer/tests/sylar/uri.h
+iostream
+-
+
