@@ -11,6 +11,7 @@ HttpSession::HttpSession(Socket::ptr sock, bool owner)
 HttpRequest::ptr HttpSession::recvRequest() {
     HttpRequestParser::ptr parser(new HttpRequestParser);
     uint64_t buff_size = HttpRequestParser::GetHttpRequestBufferSize();
+    // TODO
     std::shared_ptr<char> buffer(new char[HttpRequestParser::GetHttpRequestBufferSize()], [](char* ptr){
         delete[] ptr;
     });

@@ -134,7 +134,7 @@ bool HttpRequest::hasCookie(const std::string& key, std::string* val) {
 
 std::ostream& HttpRequest::dump(std::ostream& os) const {
     // GET /url HTTP/1.1
-    //Host: www.sylar.top
+    // Host: www.sylar.top
     os << HttpMethodToString(m_method) << " "
        << m_path
        << (m_query.empty() ? "" : "?")
